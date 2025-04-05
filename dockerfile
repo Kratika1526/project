@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # Copy your static files into the Nginx web root
-COPY . .
+Copy ./project/index.html /usr/share/nginx/html/index.html
 
 # Expose port 80
 EXPOSE 80
